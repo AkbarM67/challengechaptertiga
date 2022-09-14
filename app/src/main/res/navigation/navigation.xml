@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_alfabet">
+
+    <fragment
+        android:id="@+id/fragment_alfabet"
+        android:name="com.example.challengechaptertiga.Fragment_alfabet"
+        android:label="fragment_alfabet"
+        tools:layout="@layout/fragment_alfabet" >
+        <action
+            android:id="@+id/action_fragment_alfabet_to_fragmentword"
+            app:destination="@id/fragmentword" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentword"
+        android:name="com.example.challengechaptertiga.Fragmentword"
+        android:label="fragment_fragmentword"
+        tools:layout="@layout/fragment_fragmentword" />
+</navigation>
